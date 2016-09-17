@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-Type" content="text/html;charset=utf-8" />
+<title>无标题文档</title>
+<link href="{{STATIC_URL}}css/introduction.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{{STATIC_URL}}js/introduction.js"></script>
+</head>
+<body>
+	<div class="top">
+		<div class="top1">
+			<div class="top_right">
+			<div id="message">
+				<img src="{{STATIC_URL}}images/message.png" />
+			</div><!--message结束-->
+			<div id="me">
+				<img src="{{STATIC_URL}}images/me.png" />
+			</div><!--me结束-->
+		</div><!--top_right结束-->
+		<div id="message_list">
+			<ul>
+				<li><a href="#">系统通知</a></li>
+				<li><a href="#">本馆公告</a></li>
+				<li><a href="#">我的消息</a></li>
+			</ul>
+		</div><!--message_list结束-->
+		<div id="me_list">
+			<ul>
+				<li><a href="#">个人主页</a></li>
+				<li><a href="#">借阅情况</a></li>
+				<li><a href="#">我的收藏</a></li>
+				<li><a href="#">退出</a></li>
+			</ul>
+	    </div><!--me_list结束-->
+		</div><!--top1-->
+		<div class="top2">
+			<div class="top_rg">
+			<a href="#"><span class="rg_right"><img src="{{STATIC_URL}}images/rg_s.png"></span></a>
+			<form>
+			<input type="text"  />
+			</form>	
+		</div>
+		</div><!--top2-->
+	</div><!--top-->
+	<div class="main">
+		<div class="main_top">
+			<div class="mt_l">
+				<div class="mt_l1">
+					<img src="{{book.pic_m}}">
+				</div><!--mt_l1-->
+				<div class="mt_l2">
+					<p><a href="#">作者：{{book.author}}</a></p>
+					<p><a href="#">出版社：{{book.publisher}}</a></p>
+					<p>出版年份：{{book.publicYear}}</p>
+					<p>收录位置：{{book.pos}}</p>
+					<p>在馆本数：{{book.count}}</p>
+					<p>借出本数：0</p>
+					<p>ISBN码:{{book.ISBN}}</p>
+				</div><!--mt_l2-->
+				<div class="mt_l3">
+					<h4>作者简介：</h4>
+					<p>
+						他是一位信息产业的<br />经理人、创业者和电脑科<br />学的研究者。曾在苹果、<br />微软和Google等多家IT<br />公司担当要职
+					</p>
+				</div><!--mt_l3-->
+			</div><!--mt_1-->
+			<div class="mt_r">
+				<p>看过此书的人还看过...</p>
+				<div class="mt_r1">
+					<div class="mt_r2">
+						<img src="{{STATIC_URL}}images/book.png">
+					</div><!--mt_r2-->
+					<div class="mt_r3">
+						<h3>书名</h1>
+						<p>作者</p>
+						<p>出版社</p>
+						<p>出版年份</p>
+						<p>评分</p>
+					</div><!--mt_r3-->
+				</div><!--mt_r1-->
+			</div><!--mt_r-->
+		</div><!--main_top-->
+		<div class="main_mid">
+			<div class="main_mid1">
+				<p>{{book.name}}</p>
+				<img src="{{STATIC_URL}}images/start.png" /><br>
+				<img src="{{STATIC_URL}}images/sc.png" />
+				<img src="{{STATIC_URL}}images/tj.png" />
+				<img src="{{STATIC_URL}}images/fx.png" />
+				<p>内容简介：</p>
+			</div><!--main_mid1-->
+			<div class="main_mid2">
+				<p>本书以简明的语言比较系统地阐述了Intel公<br>司MCS－51单片机的基本结构、原理、指令系统<br>软件、接口和应用系统设计等知识，并对公司生<br>产的89系列及MCS-96系列单片机作了简要介绍。</p>
+			</div><!--main_mid2-->
+		</div><!--main_mid-->
+		<div class="foot">
+			<div class="foot_top">
+				<p>评论区</p>
+			</div><!--foot_top-->
+			<div class="foot_mid1">
+				<div class="mid1_l">
+					<img src="{{STATIC_URL}}images/user.png" />
+				</div><!--mid1_l-->
+				<div class="mid1_r">
+					<input type="text" name="评论" />
+					<a href="#"><img src="{{STATIC_URL}}images/comment.png"></a>
+				</div><!--mid1_r-->
+			</div><!--foot_mid1-->
+			<div class="foot_mid2">
+				<div class="mid2_l">
+					<img src="{{STATIC_URL}}images/user.png" />
+				</div><!--mid1_l-->
+				<div class="mid2_r">
+					<p>ID&nbsp;&nbsp;&nbsp;&nbsp;评分</p>
+					<p>书本知识简明易懂</p>
+				</div><!--mid1_r-->
+			</div><!--foot_mid2-->
+			<div class="foot_bot">
+				<p>第i/n页&nbsp;&nbsp;&nbsp; 上一页&nbsp;&nbsp;&nbsp; 下一页&nbsp;&nbsp;&nbsp; 转至<input type="text" name="页码" />页</p>
+			</div>
+		</div><!--foot-->
+	</div><!--main-->
+</body>
+</html>

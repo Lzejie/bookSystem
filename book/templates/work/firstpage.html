@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-Type" content="text/html;charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/firstpage.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<script type="text/javascript" src="js/firstpage.js"></script>
+	<div class="top">
+		<div class="top_right">
+			<a href="#"><span>注册</span></a>
+			<div id="message">
+				<img src="images/message.png" />
+			</div><!--message结束-->
+			<div id="me">
+				<img src="images/me.png" />
+			</div><!--me结束-->
+		</div><!--top_right结束-->
+		<div id="message_list">
+			<ul>
+				<li><a href="#">系统通知</a></li>
+				<li><a href="#">本馆公告</a></li>
+				<li><a href="#">我的消息</a></li>
+			</ul>
+		</div><!--message_list结束-->
+		<div id="me_list">
+			<ul>
+				<li><a href="#">个人主页</a></li>
+				<li><a href="#">借阅情况</a></li>
+				<li><a href="#">我的收藏</a></li>
+				<li><a href="#">退出</a></li>
+			</ul>
+	    </div><!--me_list结束-->
+		<div class="top_rg">
+			<a href="#"><span class="rg_right"><img src="images/rg_right.png"></span></a>
+			<form>
+			<input type="text" name="输入书名/作者/编码查找书籍" value="输入书名/作者/编码查找书籍" />
+			</form>	
+		</div>
+	</div><!--top结束-->
+	<div class="tab1" id="tab1">
+		<div class="tab_list">
+			<div class="menu">
+				<ul>
+					<li id="one4" onclick="setTab('one',4)">书单推荐</li>
+					<li id="one3" onclick="setTab('one',3)">新书推荐</li>
+					<li id="one2" onclick="setTab('one',2)">热门推荐</li>
+					<li id="one1" onclick="setTab('one',1)">个性化推荐</li>			
+				</ul>
+			</div><!--tab_list结束-->
+		</div><!--tab_list结束-->
+		<div class="menu_body">
+			<div class="menudiv">
+				<div id="con_one_1">
+					<img src="images/first_book1.png" />
+					<img src="images/first_book2.png" />
+					<img src="images/first_book1.png" />
+				</div>
+				<div id="con_one_2" style="display:none;">
+					<img src="images/first_book2.png" />
+					<img src="images/first_book1.png" />
+					<img src="images/first_book2.png" />
+				</div>
+				<div id="con_one_3" style="display:none;">
+					<img src="images/first_book2.png" />
+					<img src="images/first_book2.png" />
+					<img src="images/first_book1.png" />
+				</div>
+				<div id="con_one_4" style="display:none;">
+					<img src="images/first_book1.png" />
+					<img src="images/first_book2.png" />
+					<img src="images/first_book2.png" />
+				</div>
+			</div><!--menudiv结束-->
+		</div><!--menu_body-->
+	</div><!--tab1结束-->
+	<div style="text-align:center;clear:both;"></div>
+<script type="text/javascript">
+var me = document.getElementById("me");
+	var me_list = document.getElementById("me_list");
+	me.onmouseover = function(){
+		me_list.style.display = "block";
+	};
+	me_list.onmouseover = function(){
+		me_list.style.display = "block";
+	};
+	me.onmouseout = function(){
+		me_list.style.display = "none";
+	};
+	me_list.onmouseout = function(){
+		me_list.style.display = "none";
+	};//me_list结束
+
+	var message = document.getElementById("message");
+	var message_list = document.getElementById("message_list");
+	message.onmouseover = function(){
+		message_list.style.display = "block";
+	};
+	message_list.onmouseover = function(){
+		message_list.style.display = "block";
+	};
+	message.onmouseout = function(){
+		message_list.style.display = "none";
+	};
+	message_list.onmouseout = function(){
+		message_list.style.display = "none";
+	};//message_list结束
+</script>
+</body>
+</html>
