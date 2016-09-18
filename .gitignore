@@ -1,0 +1,6 @@
+./lend.xls
+./saveCsvToMysql.log
+./user.xls
+./books.xls
+*.pyc
+
